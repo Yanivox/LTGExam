@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12ECE3A68814D2BF7685DAD6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94FC76907873B0D79AD66C63 /* libPods.a */; };
 		796A959F1A83BAE50061B43B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 796A959E1A83BAE50061B43B /* main.m */; };
 		796A95A21A83BAE50061B43B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 796A95A11A83BAE50061B43B /* AppDelegate.m */; };
 		796A95A51A83BAE50061B43B /* LTGExam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 796A95A31A83BAE50061B43B /* LTGExam.xcdatamodeld */; };
@@ -15,6 +16,8 @@
 		796A95AD1A83BAE50061B43B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 796A95AC1A83BAE50061B43B /* Images.xcassets */; };
 		796A95B01A83BAE50061B43B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 796A95AE1A83BAE50061B43B /* LaunchScreen.xib */; };
 		796A95BC1A83BAE50061B43B /* LTGExamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 796A95BB1A83BAE50061B43B /* LTGExamTests.m */; };
+		796A95C91A83BD550061B43B /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 796A95C81A83BD550061B43B /* LoginViewController.m */; };
+		796A95CD1A83C2AD0061B43B /* FBSession+Extentions.m in Sources */ = {isa = PBXBuildFile; fileRef = 796A95CC1A83C2AD0061B43B /* FBSession+Extentions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		665741B77BF6E64BE02244D7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		796A95991A83BAE50061B43B /* LTGExam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LTGExam.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		796A959D1A83BAE50061B43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		796A959E1A83BAE50061B43B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -42,6 +46,12 @@
 		796A95B51A83BAE50061B43B /* LTGExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LTGExamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		796A95BA1A83BAE50061B43B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		796A95BB1A83BAE50061B43B /* LTGExamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LTGExamTests.m; sourceTree = "<group>"; };
+		796A95C71A83BD550061B43B /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = Controllers/LoginViewController/LoginViewController.h; sourceTree = "<group>"; };
+		796A95C81A83BD550061B43B /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = Controllers/LoginViewController/LoginViewController.m; sourceTree = "<group>"; };
+		796A95CB1A83C2AD0061B43B /* FBSession+Extentions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FBSession+Extentions.h"; path = "Categories/FBSession+Extentions.h"; sourceTree = "<group>"; };
+		796A95CC1A83C2AD0061B43B /* FBSession+Extentions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "FBSession+Extentions.m"; path = "Categories/FBSession+Extentions.m"; sourceTree = "<group>"; };
+		94FC76907873B0D79AD66C63 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D03160267EF589F052FE4C55 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12ECE3A68814D2BF7685DAD6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +79,8 @@
 				796A959B1A83BAE50061B43B /* LTGExam */,
 				796A95B81A83BAE50061B43B /* LTGExamTests */,
 				796A959A1A83BAE50061B43B /* Products */,
+				A5E9D35AC3FA82001C156CE1 /* Pods */,
+				9E28148F96559C9E0E36E8CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,10 +96,10 @@
 		796A959B1A83BAE50061B43B /* LTGExam */ = {
 			isa = PBXGroup;
 			children = (
+				796A95CA1A83C28D0061B43B /* Categories */,
+				796A95C51A83BCFB0061B43B /* Controllers */,
 				796A95A01A83BAE50061B43B /* AppDelegate.h */,
 				796A95A11A83BAE50061B43B /* AppDelegate.m */,
-				796A95A61A83BAE50061B43B /* ViewController.h */,
-				796A95A71A83BAE50061B43B /* ViewController.m */,
 				796A95A91A83BAE50061B43B /* Main.storyboard */,
 				796A95AC1A83BAE50061B43B /* Images.xcassets */,
 				796A95AE1A83BAE50061B43B /* LaunchScreen.xib */,
@@ -122,6 +135,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		796A95C51A83BCFB0061B43B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				796A95C61A83BD0B0061B43B /* Login View Controller */,
+				796A95A61A83BAE50061B43B /* ViewController.h */,
+				796A95A71A83BAE50061B43B /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		796A95C61A83BD0B0061B43B /* Login View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				796A95C71A83BD550061B43B /* LoginViewController.h */,
+				796A95C81A83BD550061B43B /* LoginViewController.m */,
+			);
+			name = "Login View Controller";
+			sourceTree = "<group>";
+		};
+		796A95CA1A83C28D0061B43B /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				796A95CB1A83C2AD0061B43B /* FBSession+Extentions.h */,
+				796A95CC1A83C2AD0061B43B /* FBSession+Extentions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9E28148F96559C9E0E36E8CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94FC76907873B0D79AD66C63 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5E9D35AC3FA82001C156CE1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				665741B77BF6E64BE02244D7 /* Pods.debug.xcconfig */,
+				D03160267EF589F052FE4C55 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,9 +187,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 796A95BF1A83BAE50061B43B /* Build configuration list for PBXNativeTarget "LTGExam" */;
 			buildPhases = (
+				EEAC598179167F1058521D87 /* Check Pods Manifest.lock */,
 				796A95951A83BAE50061B43B /* Sources */,
 				796A95961A83BAE50061B43B /* Frameworks */,
 				796A95971A83BAE50061B43B /* Resources */,
+				8E3B84FCB71623DE54F1C1B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,6 +277,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E3B84FCB71623DE54F1C1B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAC598179167F1058521D87 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		796A95951A83BAE50061B43B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -226,6 +319,8 @@
 				796A95A21A83BAE50061B43B /* AppDelegate.m in Sources */,
 				796A95A81A83BAE50061B43B /* ViewController.m in Sources */,
 				796A959F1A83BAE50061B43B /* main.m in Sources */,
+				796A95C91A83BD550061B43B /* LoginViewController.m in Sources */,
+				796A95CD1A83C2AD0061B43B /* FBSession+Extentions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,6 +442,7 @@
 		};
 		796A95C01A83BAE50061B43B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 665741B77BF6E64BE02244D7 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTGExam/Info.plist;
@@ -357,6 +453,7 @@
 		};
 		796A95C11A83BAE50061B43B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D03160267EF589F052FE4C55 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LTGExam/Info.plist;
@@ -418,6 +515,7 @@
 				796A95C11A83BAE50061B43B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		796A95C21A83BAE50061B43B /* Build configuration list for PBXNativeTarget "LTGExamTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +524,7 @@
 				796A95C41A83BAE50061B43B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

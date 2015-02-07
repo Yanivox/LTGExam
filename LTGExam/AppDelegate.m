@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @interface AppDelegate ()
 
@@ -17,7 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //Init the FBLoginView class
+    //https://developers.facebook.com/docs/facebook-login/ios/v2.2
+    [FBLoginView class];
+    
     return YES;
+}
+// During the Facebook login flow, your app passes control to the Facebook iOS app or Facebook in a mobile browser.
+// After authentication, your app will be called back with the session information.
+- (BOOL)application:(UIApplication *)application
+            openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication
+         annotation:(id)annotation
+{
+    return [FBAppCall handleOpenURL:url sourceApplication:sourceApplication];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -36,6 +51,10 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    
+    // Handle the user leaving the app while the Facebook login dialog is being shown
+    // For example: when the user presses the iOS "home" button while the login dialog is active
+    [FBAppCall handleDidBecomeActive];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
